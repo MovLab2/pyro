@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=PYRO
+Comment=PYRO P2P Cryptocurrency
+Exec=pyro-qt %u
+Terminal=false
+Type=Application
+Icon=pyro128
+MimeType=x-scheme-handler/pyro;
+Categories=Office;Finance;
+Name[en_US]=pyro-qt.desktop

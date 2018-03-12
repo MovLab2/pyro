@@ -1,0 +1,6 @@
+usr/local/bin/pyro-qt usr/bin
+share/pixmaps/pyro32.xpm usr/share/pixmaps
+share/pixmaps/pyro16.xpm usr/share/pixmaps
+share/pixmaps/pyro128.png usr/share/pixmaps
+debian/pyro-qt.desktop usr/share/applications
+debian/pyro-qt.protocol usr/share/kde4/services/

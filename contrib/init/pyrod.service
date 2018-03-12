@@ -1,0 +1,22 @@
+[Unit]
+Description=PYRO's distributed currency daemon
+After=network.target
+
+[Service]
+User=pyrocore
+Group=pyrocore
+
+Type=forking
+PIDFile=/var/lib/pyrod/pyrod.pid
+ExecStart=/usr/bin/pyrod -daemon -pid=/var/lib/pyrod/pyrod.pid \
+-conf=/etc/pyrocore/pyro.conf -datadir=/var/lib/pyrod -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
